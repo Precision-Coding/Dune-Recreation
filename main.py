@@ -5,13 +5,13 @@ import sys
 
 def backGround(width, height):
     # Can be changed later on for customisation (Im not sure of the legality of that image but oh well)
-    back_ground_img = pygame.image.load("assets/BackGrounds/DuneBG.png")
+    back_ground_img = pygame.image.load("assets/backgrounds/dune_background.png")
     back_ground_surf = pygame.transform.scale(back_ground_img, (width, height)).convert_alpha()
     return back_ground_surf
 
 def ball(width, height):
     # Can be changed later on for customisation
-    ball_img = pygame.image.load("assets/Balls/Ball1.png")
+    ball_img = pygame.image.load("assets/balls/ball_1.png")
     ball_surf = pygame.transform.scale(ball_img, (width / 60, height / 30)).convert_alpha()
     return ball_surf
 
