@@ -34,7 +34,10 @@ pygame.font.init()
 baseFont = pygame.font.SysFont("helvetica", 20)
 
 #Variables
-x, y, x_velocity, y_velocity, gravity_offset, floor = width / 4, 0, 0, 0, 0, (height / 4 * 3)
+x, y, = width / 4, 0
+x_velocity, y_velocity, = 1000, 0
+gravity_offset = 0
+floor = (height / 4 * 3)
 ball_surf = ball(width, height)
 back_ground = (backGround(width, height))
 screen.blit(back_ground, (0,0))
